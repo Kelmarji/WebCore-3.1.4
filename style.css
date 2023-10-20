@@ -125,12 +125,25 @@ header {
   overflow: hidden;
 }
 
+.main__title--higliter {
+  width: 4px;
+  height: 40px;
+  border-right: 6px solid #41F6D7;
+  border-radius: 5px;
+  position: fixed;
+  left: -5px;
+}
+ @media (min-width: 1120px) {
+  .main__title--higliter{
+    left: -375px;
+  }
+ }
+
 
 .main__title {
   width: 288px;
   font-family: TTlakesBold;
-  border-left: 6px solid #41F6D7;
-  border-radius: 5px;
+  
 }
 
 
