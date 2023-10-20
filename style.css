@@ -276,10 +276,10 @@ header {
 }
 
 
-.content__text p:nth-child(2) {display: none;}
+.content__text p:nth-child(3) {display: none;}
 
 @media (min-width:1120px){
-  .content__text p:nth-child(2) {display: block;}
+  .content__text p:nth-child(3) {display: block;}
   .content__text {margin-right: 20px;} 
 }
 
