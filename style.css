@@ -53,6 +53,13 @@ body {
   }
 }
 
+@media (min-width: 1180px) {
+  body {
+    margin: 0 auto; /* выравниваем контент по центру */
+    max-width: none; /* убираем максимальное ограничение ширины контента */
+  }
+
+}
 .header__divider {
   height: 32px;
   border: 1px solid #EAEAEA;
@@ -67,6 +74,27 @@ header {
   justify-content: space-between;
   align-items: center;
   border-bottom: 1px solid #D9FFF5;
+  gap: 16px;
+}
+
+.header__leftSide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
+}
+
+@media (min-width: 768px) {
+  .header__leftSide {
+    gap: 20px;
+  }
+}
+
+.header__rightSide {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 16px;
 }
 
 .header__button--call {
@@ -127,6 +155,12 @@ header {
   font-family: TTlakeslight;
   overflow: hidden;
   background-color: #F8F8F8;
+}
+@media (min-width: 1180px) {
+  .main {
+      max-width: 1180px;
+      margin: 0 auto;
+  }
 }
 
 .main__title--higliter {
@@ -210,18 +244,26 @@ header {
     display: flex;
     flex-direction: row;
     overflow: visible;
+    flex-wrap: wrap;
   }
 }
 
 .main__nav li {
-  width: 220px;
+  width: auto;
   height: 24px;
   padding: 8px 9px 8px 16px;
   white-space: nowrap;
   margin-right: 28px;
 }
 
-.main__nav li:active {
+@media (min-width: 1120px) {
+  .main__nav li {
+    padding: 9px 22px 9px 22px;
+    margin-right: 40px;
+  }
+}
+
+.main__nav li:hover {
   border-radius: 6px;
   box-shadow:inset 0px 0px 0px 2px #B8FFEC;
   background: #FFF;
@@ -265,6 +307,7 @@ header {
 
 
 .main__expand {
+  font-size: 16px;
   margin-top: 16px;
   padding: 0;
   display: flex;
